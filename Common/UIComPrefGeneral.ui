@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UIComPrefGeneral</class>
+ <widget class="QWidget" name="UIComPrefGeneral">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>426</width>
+    <height>323</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QCheckBox" name="m_pqchSingleInstanceOnly">
+     <property name="text">
+      <string>Allow only one instance of application</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>User interface language</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="m_pqcbUILanguage">
+       <item>
+        <property name="text">
+         <string>English</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Start Window Position</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <item>
+       <widget class="QRadioButton" name="m_pqrbWindowPositionRestoreLast">
+        <property name="text">
+         <string>Restore previous size and position</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="m_pqrbWindowPositionUseSpecified">
+        <property name="text">
+         <string>Use specified size and position</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="m_pqhblWinPosition">
+        <item>
+         <layout class="QVBoxLayout" name="m_pqvblWinPosLables">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>PosX</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>PosY</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="m_pqvblWinPosBoxes">
+          <item>
+           <widget class="QLineEdit" name="m_pqleWindowPositionX">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="m_pqleWindowPositionY">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="m_pqvblWinSizeLables">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Width</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Height</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="m_pqvblWinSizeBoxes">
+          <item>
+           <widget class="QLineEdit" name="m_pqleWindowPositionWidth">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="m_pqleWindowPositionHeight">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>New Version Check</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QRadioButton" name="m_pqrbUpdatesCheckAndNotify">
+        <property name="text">
+         <string>Check for updates and notify when new version is available</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="m_pqrbUpdatesCheckOnly">
+        <property name="text">
+         <string>Check for updates and display latest version in Help &gt; About dialog</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="m_pqrbUpdatesDoNotCheck">
+        <property name="text">
+         <string>Do not check for updates</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>14</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>m_pqchSingleInstanceOnly</tabstop>
+  <tabstop>m_pqcbUILanguage</tabstop>
+  <tabstop>m_pqrbWindowPositionRestoreLast</tabstop>
+  <tabstop>m_pqrbWindowPositionUseSpecified</tabstop>
+  <tabstop>m_pqleWindowPositionX</tabstop>
+  <tabstop>m_pqleWindowPositionY</tabstop>
+  <tabstop>m_pqleWindowPositionWidth</tabstop>
+  <tabstop>m_pqleWindowPositionHeight</tabstop>
+  <tabstop>m_pqrbUpdatesCheckAndNotify</tabstop>
+  <tabstop>m_pqrbUpdatesCheckOnly</tabstop>
+  <tabstop>m_pqrbUpdatesDoNotCheck</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>m_pqrbWindowPositionUseSpecified</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleWindowPositionX</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>193</x>
+     <y>150</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqrbWindowPositionUseSpecified</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleWindowPositionY</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>119</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>198</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqrbWindowPositionUseSpecified</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleWindowPositionWidth</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>393</x>
+     <y>150</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqrbWindowPositionUseSpecified</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleWindowPositionHeight</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>400</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqrbWindowPositionUseSpecified</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleWindowPositionX</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>404</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>202</x>
+     <y>132</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

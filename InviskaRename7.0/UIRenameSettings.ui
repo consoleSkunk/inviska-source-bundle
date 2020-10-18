@@ -1,0 +1,1531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UIRenameSettings</class>
+ <widget class="QWidget" name="UIRenameSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>914</width>
+    <height>253</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+    <horstretch>1</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_4">
+   <item>
+    <widget class="QTabWidget" name="m_pqtwRenameSettingsTab">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="NameTab">
+      <attribute name="title">
+       <string>&amp;Name</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="2">
+        <widget class="QLabel" name="m_pqlblNameInsertTheTextAtPos">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>At Position</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="3">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="IComQLineEdit" name="m_pqleNameReplaceName">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="m_pqlblNameChangeCase">
+           <property name="text">
+            <string>Change Case</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="m_pqcboNameChangeCase">
+           <property name="currentText">
+            <string>No Change</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>No Change</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Title Case</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Sentance case</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>lower case</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>UPPER CASE</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="m_pqcbNameReplaceTheText">
+         <property name="text">
+          <string>Replace The Text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="IComQLineEdit" name="m_pqleNameReplaceTheText">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="m_pqlblNameReplaceTheTextWith">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>With</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="IComQLineEdit" name="m_pqleNameReplaceTheTextWith">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="m_pqcbNameInsertTheText">
+         <property name="text">
+          <string>Insert The Text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="IComQLineEdit" name="m_pqleNameInsertTheText">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="IComQLineEdit" name="m_pqleNameInsertTheTextAtPos">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="m_pqcbNameInsertAtStart">
+         <property name="text">
+          <string>Insert At Start</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="IComQLineEdit" name="m_pqleNameInsertAtStart">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QCheckBox" name="m_pqcbNameInsertAtEnd">
+         <property name="text">
+          <string>Insert At End</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="IComQLineEdit" name="m_pqleNameInsertAtEnd">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QCheckBox" name="m_pqcbNameCropAtPos">
+         <property name="text">
+          <string>Crop At Position</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="IComQLineEdit" name="m_pqleNameCropAtPos">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLabel" name="m_pqlblNameCropAtPosNextNChar">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>The Next N Characters</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="IComQLineEdit" name="m_pqleNameCropAtPosNextNChar">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QCheckBox" name="m_pqcbNameLeftCropNChar">
+         <property name="text">
+          <string>Left Crop N Characters</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="IComQLineEdit" name="m_pqleNameLeftCropNChar">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QCheckBox" name="m_pqcbNameRightCropNChar">
+         <property name="text">
+          <string>Right Crop N Characters</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="IComQLineEdit" name="m_pqleNameRightCropNChar">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="m_pqcbNameReplaceName">
+         <property name="text">
+          <string>Replace Name With</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="ExtensionTab">
+      <attribute name="title">
+       <string>&amp;Extension</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="m_pqcbExtenReplaceName">
+         <property name="text">
+          <string>Replace Name With</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="3">
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="IComQLineEdit" name="m_pqleExtenReplaceName">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="m_pqlblExtenChangeCase">
+           <property name="text">
+            <string>Change Case</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="m_pqcboExtenChangeCase">
+           <property name="currentText">
+            <string>No Change</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>No Change</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Title Case</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Sentance case</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>lower case</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>UPPER CASE</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="m_pqcbExtenReplaceTheText">
+         <property name="text">
+          <string>Replace The Text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="IComQLineEdit" name="m_pqleExtenReplaceTheText">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="m_pqlblExtenReplaceTheTextWith">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>With</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="IComQLineEdit" name="m_pqleExtenReplaceTheTextWith">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="m_pqcbExtenInsertTheText">
+         <property name="text">
+          <string>Insert The Text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="IComQLineEdit" name="m_pqleExtenInsertTheText">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="m_pqlblExtenInsertTheTextAtPos">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>At Position</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="IComQLineEdit" name="m_pqleExtenInsertTheTextAtPos">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="m_pqcbExtenInsertAtStart">
+         <property name="text">
+          <string>Insert At Start</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="IComQLineEdit" name="m_pqleExtenInsertAtStart">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QCheckBox" name="m_pqcbExtenInsertAtEnd">
+         <property name="text">
+          <string>Insert At End</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="IComQLineEdit" name="m_pqleExtenInsertAtEnd">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QCheckBox" name="m_pqcbExtenCropAtPos">
+         <property name="text">
+          <string>Crop At Position</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="IComQLineEdit" name="m_pqleExtenCropAtPos">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLabel" name="m_pqlblExtenCropAtPosNextNChar">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>The Next N Characters</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="IComQLineEdit" name="m_pqleExtenCropAtPosNextNChar">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QCheckBox" name="m_pqcbExtenLeftCropNChar">
+         <property name="text">
+          <string>Left Crop N Characters</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="IComQLineEdit" name="m_pqleExtenLeftCropNChar">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QCheckBox" name="m_pqcbExtenRightCropNChar">
+         <property name="text">
+          <string>Right Crop N Characters</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="IComQLineEdit" name="m_pqleExtenRightCropNChar">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="NumberingTab">
+      <attribute name="title">
+       <string>N&amp;umbering</string>
+      </attribute>
+      <widget class="QGroupBox" name="m_pqgbNumberingType">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>171</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Numbering</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QRadioButton" name="m_pqrbNumberingNoNumber">
+          <property name="text">
+           <string>No Numbering</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="m_pqrbNumberingAfterName">
+          <property name="text">
+           <string>After Filename</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="m_pqrbNumberingBeforeName">
+          <property name="text">
+           <string>Before Filename</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QRadioButton" name="m_pqrbNumberingAtPos">
+            <property name="text">
+             <string>At Position</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="IComQLineEdit" name="m_pqleNumberingAtPos">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="m_pqgbNumberingIncrement">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>20</y>
+         <width>171</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Increment</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="m_pqlblNumberingStartNum">
+          <property name="text">
+           <string>Start Number</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="IComQLineEdit" name="m_pqleNumberingStartNum">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="IComQLineEdit" name="m_pqleNumberingIncrement">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="m_pqlblNumberingIncrement">
+          <property name="text">
+           <string>Increment</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="m_pqgbNumberingZeroFill">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>20</y>
+         <width>171</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Zero Fill</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QRadioButton" name="m_pqrbNumberingZeroFillAuto">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Automatic</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QRadioButton" name="m_pqrbNumberingZeroFillSpec">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>Specified</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="IComQLineEdit" name="m_pqleNumberingZeroFill">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>Rename</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QRadioButton" name="m_pqrbRenameFilesOnly">
+          <property name="text">
+           <string>Files Only</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="m_pqrbRenameFoldersOnly">
+          <property name="text">
+           <string>Folders Only</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="m_pqrbRenameFilesAndFolders">
+          <property name="text">
+           <string>Files And Folders</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="m_pqrbRenameSelectedItemsOnly">
+          <property name="text">
+           <string>Selected Items Only</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="m_pqrbRenameFilesWithExtension">
+          <property name="text">
+           <string>Files With Extensions:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="IComQLineEdit" name="m_pqleRenameFilesWithExtension">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="m_pqpbRenameButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>&amp;Rename</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="m_pqpbUndoButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Un&amp;do</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>IComQLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>IComQLineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>m_pqtwRenameSettingsTab</tabstop>
+  <tabstop>m_pqcbNameReplaceName</tabstop>
+  <tabstop>m_pqleNameReplaceName</tabstop>
+  <tabstop>m_pqcbNameReplaceTheText</tabstop>
+  <tabstop>m_pqleNameReplaceTheText</tabstop>
+  <tabstop>m_pqleNameReplaceTheTextWith</tabstop>
+  <tabstop>m_pqcbNameInsertTheText</tabstop>
+  <tabstop>m_pqleNameInsertTheText</tabstop>
+  <tabstop>m_pqleNameInsertTheTextAtPos</tabstop>
+  <tabstop>m_pqcbNameInsertAtStart</tabstop>
+  <tabstop>m_pqleNameInsertAtStart</tabstop>
+  <tabstop>m_pqcbNameInsertAtEnd</tabstop>
+  <tabstop>m_pqleNameInsertAtEnd</tabstop>
+  <tabstop>m_pqcbNameCropAtPos</tabstop>
+  <tabstop>m_pqleNameCropAtPos</tabstop>
+  <tabstop>m_pqleNameCropAtPosNextNChar</tabstop>
+  <tabstop>m_pqcbNameLeftCropNChar</tabstop>
+  <tabstop>m_pqleNameLeftCropNChar</tabstop>
+  <tabstop>m_pqcbNameRightCropNChar</tabstop>
+  <tabstop>m_pqleNameRightCropNChar</tabstop>
+  <tabstop>m_pqcboNameChangeCase</tabstop>
+  <tabstop>m_pqcbExtenReplaceName</tabstop>
+  <tabstop>m_pqleExtenReplaceName</tabstop>
+  <tabstop>m_pqcbExtenReplaceTheText</tabstop>
+  <tabstop>m_pqleExtenReplaceTheText</tabstop>
+  <tabstop>m_pqleExtenReplaceTheTextWith</tabstop>
+  <tabstop>m_pqcbExtenInsertTheText</tabstop>
+  <tabstop>m_pqleExtenInsertTheText</tabstop>
+  <tabstop>m_pqleExtenInsertTheTextAtPos</tabstop>
+  <tabstop>m_pqcbExtenInsertAtStart</tabstop>
+  <tabstop>m_pqleExtenInsertAtStart</tabstop>
+  <tabstop>m_pqcbExtenInsertAtEnd</tabstop>
+  <tabstop>m_pqleExtenInsertAtEnd</tabstop>
+  <tabstop>m_pqcbExtenCropAtPos</tabstop>
+  <tabstop>m_pqleExtenCropAtPos</tabstop>
+  <tabstop>m_pqleExtenCropAtPosNextNChar</tabstop>
+  <tabstop>m_pqcbExtenLeftCropNChar</tabstop>
+  <tabstop>m_pqleExtenLeftCropNChar</tabstop>
+  <tabstop>m_pqcbExtenRightCropNChar</tabstop>
+  <tabstop>m_pqleExtenRightCropNChar</tabstop>
+  <tabstop>m_pqcboExtenChangeCase</tabstop>
+  <tabstop>m_pqrbNumberingNoNumber</tabstop>
+  <tabstop>m_pqrbNumberingAfterName</tabstop>
+  <tabstop>m_pqrbNumberingBeforeName</tabstop>
+  <tabstop>m_pqrbNumberingAtPos</tabstop>
+  <tabstop>m_pqleNumberingAtPos</tabstop>
+  <tabstop>m_pqleNumberingStartNum</tabstop>
+  <tabstop>m_pqleNumberingIncrement</tabstop>
+  <tabstop>m_pqrbNumberingZeroFillAuto</tabstop>
+  <tabstop>m_pqrbNumberingZeroFillSpec</tabstop>
+  <tabstop>m_pqleNumberingZeroFill</tabstop>
+  <tabstop>m_pqrbRenameFilesOnly</tabstop>
+  <tabstop>m_pqrbRenameFoldersOnly</tabstop>
+  <tabstop>m_pqrbRenameFilesAndFolders</tabstop>
+  <tabstop>m_pqrbRenameSelectedItemsOnly</tabstop>
+  <tabstop>m_pqrbRenameFilesWithExtension</tabstop>
+  <tabstop>m_pqleRenameFilesWithExtension</tabstop>
+  <tabstop>m_pqpbRenameButton</tabstop>
+  <tabstop>m_pqpbUndoButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>m_pqcbNameReplaceName</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameReplaceName</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>47</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameReplaceName</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameReplaceName</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>47</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameReplaceTheText</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameReplaceTheText</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameReplaceTheText</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameReplaceTheText</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameInsertTheText</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameInsertTheText</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameInsertTheText</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameInsertTheTextAtPos</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameInsertTheText</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameInsertTheText</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameInsertAtStart</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameInsertAtStart</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameInsertAtStart</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameInsertAtStart</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameInsertAtEnd</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameInsertAtEnd</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameInsertAtEnd</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameInsertAtEnd</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameCropAtPos</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameCropAtPos</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>171</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameCropAtPos</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameCropAtPosNextNChar</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>171</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameCropAtPos</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameCropAtPos</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>171</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameLeftCropNChar</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameLeftCropNChar</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameLeftCropNChar</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameLeftCropNChar</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameReplaceTheText</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameReplaceTheTextWith</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenReplaceName</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenReplaceName</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>47</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenReplaceName</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenReplaceName</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>47</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenReplaceTheText</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenReplaceTheText</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenReplaceTheText</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenReplaceTheTextWith</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenReplaceTheText</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenReplaceTheText</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenInsertTheText</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenInsertTheText</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenInsertTheText</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenInsertTheTextAtPos</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenInsertTheText</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenInsertTheText</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenInsertAtStart</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenInsertAtStart</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenInsertAtStart</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenInsertAtStart</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenInsertAtEnd</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenInsertAtEnd</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenInsertAtEnd</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenInsertAtEnd</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenCropAtPos</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenCropAtPos</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>171</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenCropAtPos</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenCropAtPosNextNChar</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>171</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenCropAtPos</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenCropAtPos</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>171</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenLeftCropNChar</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenLeftCropNChar</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenLeftCropNChar</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenLeftCropNChar</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenRightCropNChar</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenRightCropNChar</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbExtenRightCropNChar</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleExtenRightCropNChar</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqrbRenameFilesWithExtension</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleRenameFilesWithExtension</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>810</x>
+     <y>129</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>893</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqrbRenameFilesWithExtension</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleRenameFilesWithExtension</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>835</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>893</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqrbNumberingZeroFillSpec</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNumberingZeroFill</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>482</x>
+     <y>101</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>538</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameRightCropNChar</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameRightCropNChar</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqcbNameRightCropNChar</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNameRightCropNChar</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqrbNumberingZeroFillSpec</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNumberingZeroFill</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqrbNumberingAtPos</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNumberingAtPos</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>145</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>193</x>
+     <y>145</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_pqrbNumberingAtPos</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_pqleNumberingAtPos</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>156</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>173</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
